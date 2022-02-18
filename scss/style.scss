@@ -5,6 +5,8 @@
 }
 
 $basiccolor: #001E64;
+$textcolor: #FFFFFF;
+
 
 a{
     color: inherit;
@@ -30,7 +32,7 @@ a{
 .header__top {
     display: flex;
     justify-content: space-between;
-    padding-top: 27px;
+    padding-top: 20px;
 }
 .logo {
     margin-left: 16px;
@@ -66,9 +68,13 @@ a{
 }
 .header__content {
     background-image: url(../images/header.png);
-    background-size: cover;
-    background-position: center;
+    background-size: top;
+    background-position: top;
     background-repeat: no-repeat;
+    padding-bottom: 20px;
+    margin-top: -100px;
+    min-height: calc(100vh-50px);
+
 }
 .title {
     font-family: 'Roboto Slab', serif;
@@ -77,9 +83,9 @@ a{
     line-height: 95px;
     color: $basiccolor;
     max-width: 589px;
-    padding-top: 200px;
+    padding-top: 170px;
     padding-left: 112px;
-    margin-bottom: 130px;
+    margin-bottom: 60px;
 }
 .header__slider {
     max-width: 522px;    
@@ -92,28 +98,94 @@ a{
 }
 .header__slider__text {
     margin-bottom: 25px;
-    color: #ffffff;
+    color: $textcolor;
     font-size: 18px;
     line-height: 22px;
     
 }
 .header__content__btn {
+    font-family: 'Roboto Slab', serif;
+    font-size: 24px;
+    line-height: 32px;
+    color: $textcolor;
+    font-weight: 700;
+    padding: 14px 88px;
+    border-radius: 20px;
+    background-color: rgba(255,255,255,.5);
+    margin-left: 110px;
+    display: inline-block;
+    transform: translateY(-100px);
+    position: absolute;
+
 }
 .header__content__box {
+    display: flex;
+    margin-left: 100%;
+    margin-right: 30px;
+    
+
 }
 .header__content__link {
+    color: $textcolor;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.header__content__link--active{
+    font-weight: 700;
 }
 
 .slick-prev,
 .slick-next{
     background-color: transparent;
     border: none;
+    cursor: pointer;
+    padding: 0;
+    font-size: 0;
+    width: 18px;
+    height: 11px;    
+    position: absolute;
+    left: 40px;
 }
 
 .slick-prev{
-    
-        width: 17,55px;
-        height: 10,35px;
-    
+    background: url(../images/prev.svg) 0 0 no-repeat;
+    top: 0;
+}
+.slick-next{
+    background: url(../images/next.svg) 0 0 no-repeat;
+    bottom: 0;
+}
+
+
+.slick-dots{
+    list-style: none;
+    position: absolute;
+    left: 38px;
+    top: 58px;
+    bottom: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    & button {
+        border: none;
+        background-color: transparent;
+        padding: 0;
+        font-size: 24px;
+        line-height: 28px;
+        color: $textcolor;
+        opacity: 0.5; 
+        cursor: pointer;
+        &::before{
+            content: '0';
+        }
+    }
+
+    & .slick-active button{
+        opacity: 1;
+    }
+    & li:nth-child(n + 10) button::before{
+        content: '';
+    }
 }
 
