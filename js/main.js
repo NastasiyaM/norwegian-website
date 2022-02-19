@@ -21,7 +21,8 @@ $(function(){
     slidesToShow: 1,
     slidesToScroll: 1,
     asNavFor: '.product__name',
-    fade: true //способ анимации
+    fade: true, //способ анимации
+    arrows : false
     });
 
 });

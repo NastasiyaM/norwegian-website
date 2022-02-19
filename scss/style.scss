@@ -122,8 +122,14 @@ a{
     display: inline-block;
     transform: translateY(-100px);
     position: absolute;
-
+    transition: all .3s;
+    &:hover{
+        background-color: $textcolor;
+        color: $basiccolor;
+    }
 }
+
+
 .header__content__box {
     display: flex;
     margin-left: 100%;
@@ -314,6 +320,11 @@ a{
     border: 1px solid $basiccolor;
     border-radius: 20px;
     cursor: pointer;
+    transition: all .3s;
+    &:hover{
+        background-color: $basiccolor;
+        color: $textcolor;
+    }
 }
 
 
@@ -405,3 +416,77 @@ a{
 
     
 }
+
+
+//ЧЕТВЕРТАЯ ЧАСТЬ
+
+.contacts {
+    background-image: url(../images/contacts-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    &__box { 
+        margin-left: auto;
+        width: 390px;
+        background-color: $textcolor;
+        padding: 33px 0 33px 20px;
+        
+    }
+    &__box-text {
+        width: 195px;
+        font-family: $font1;
+        font-size: 18px;
+        line-height: 24px;
+        color: $basiccolor;
+        margin-bottom: 35px;
+        
+    }
+    &__box-list {
+        list-style: none;
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    &__box-item {
+        margin-top: 30px;
+        & span{
+
+        }
+
+    }
+}
+
+//ФУТЕР
+
+.footer {
+    padding: 25px 0 110px;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding: 0 45px 0 23px;
+        & .menu{
+            padding-bottom: 30px;
+        }
+    }
+}
+
+.footer-social {
+    &__list {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        padding-bottom: 19px;
+
+    }
+    &__item + &__item{
+        margin-left: 10px;
+    }
+    &__link path{
+        transition: all .3s;
+    }
+    &__link:hover path {
+        fill: $basiccolor;
+    }
+}
+
+
