@@ -11,11 +11,12 @@ a {
 }
 
 .body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
+  color: #232222;
 }
 
 .container {
@@ -80,7 +81,7 @@ a {
 }
 
 .title {
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   font-weight: 700;
   font-size: 72px;
   line-height: 95px;
@@ -106,7 +107,7 @@ a {
 }
 
 .header__content__btn {
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   font-size: 24px;
   line-height: 32px;
   color: #FFFFFF;
@@ -201,4 +202,221 @@ a {
 
 .slick-dots li:nth-child(n + 10) button::before {
   content: '';
+}
+
+.product {
+  padding-top: 100px;
+}
+
+.product__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.product__name {
+  width: 510px;
+  text-align: center;
+  padding-top: 41px;
+}
+
+.product__content {
+  width: 600px;
+}
+
+.product__name-item + .product__name-item {
+  margin-top: 30px;
+}
+
+.product__name-item {
+  font-family: "Roboto Slab", serif;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.product__name-item.slick-current {
+  color: #001E64;
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.product-prev,
+.product-next {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  font-size: 0;
+  width: 18px;
+  height: 11px;
+}
+
+.product-prev {
+  background: url(../images/product-prev.svg) 0 0 no-repeat;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.product-next {
+  background: url(../images/product-next.svg) 0 0 no-repeat;
+}
+
+.product__content-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.product__content-img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.product__content-list {
+  width: 291px;
+  list-style: none;
+}
+
+.product__content-list .product__content-item {
+  margin-bottom: 30px;
+}
+
+.product__content-list .product__content-item span {
+  display: block;
+  margin-bottom: 10px;
+  color: #001E64;
+}
+
+.product__content-title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  color: #001E64;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  font-family: "Roboto Slab", serif;
+}
+
+.product__content-text {
+  color: #232222;
+  margin-bottom: 25px;
+}
+
+.product__content-btn {
+  display: inline-block;
+  font-family: "Roboto Slab", serif;
+  color: #001E64;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  padding: 12px 85px;
+  background-color: transparent;
+  text-transform: uppercase;
+  border: 1px solid #001E64;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.seafod-box {
+  background: url(../images/seafood.jpg) no-repeat;
+  background-size: cover;
+  background-position: top center;
+  padding: 290px 0 95px;
+  font-family: "Roboto Slab", serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.seafod-box__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.seafod-box__item {
+  background-image: url(../images/seafood-decor.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 180px;
+  min-height: 165px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.seafod {
+  padding: 100px 0;
+}
+
+.seafod__items {
+  margin-bottom: 100px;
+}
+
+.seafod__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.seafod__item-title {
+  max-width: 490px;
+  margin-bottom: 30px;
+  font-size: 24px;
+  line-height: 29px;
+  color: #001E64;
+  font-size: "Roboto Slab", serif;
+  font-weight: 400;
+}
+
+.seafod__item--text-right .seafod__item-title {
+  max-width: 420px;
+}
+
+.seafod__item--text-right .seafod__item-content {
+  margin-right: 180px;
+}
+
+.seafod__item-text {
+  max-width: 420px;
+  margin-bottom: 20px;
+}
+
+.seafod__blockquote {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.seafod__blockquote-text {
+  max-width: 530px;
+  font-style: 18px;
+  margin: 0 auto;
 }
