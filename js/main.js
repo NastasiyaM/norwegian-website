@@ -5,7 +5,7 @@ $(function(){
     nextArrow: '<button type="button" class="slick-next"> Next </button>',
     fade: true,
     responsive: [{
-        breakpoint: 361,
+        breakpoint: 371,
         settings: {
             dots: false,
             arrows: false,
@@ -26,21 +26,25 @@ $(function(){
     nextArrow: '<button type="button" class="product-next"> Next </button>',
     responsive: [
         {
-        breakpoint: 891,
-        settings: {
-            vertical: false,
-            slidesToShow: 3,
-            arrows: false,
-            dots: true
+            breakpoint: 891,
+            settings: {
+                vertical: false,
+                slidesToShow: 3,
+                arrows: false,
+                dots: true
         },
+    },
+    {
         breakpoint: 461,
         settings: {
             vertical: false,
             slidesToShow: 1,
             arrows: false,
             dots: true
-        }
-    }
+        },
+    },
+    
+    
     ]
 
     });
